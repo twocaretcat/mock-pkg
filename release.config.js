@@ -23,7 +23,7 @@ export default {
 			{
 				prepareCmd: 'deno task version ${nextRelease.version}',
 				// publishCmd: 'deno task "publish:*"',
-				publishCmd: 'deno task build:npm && cd npm && npm publish && deno task publish:jsr',
+				publishCmd: '(deno task build:npm && (cd npm && npm publish)); (cd .. && deno task publish:jsr)',
 			},
 		],
 		[
