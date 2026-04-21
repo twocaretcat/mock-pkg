@@ -1,6 +1,6 @@
 {
 	"name": "@twocaretcat/mock-pkg",
-	"version": "2.2.1",
+	"version": "1.0.0",
 	"license": "UNLICENSED",
 	"exports": "./src/index.ts",
 	"exclude": [
@@ -22,7 +22,9 @@
 		"publish:npm": {
 			"description": "Build and publish the package to npm.",
 			"command": "cd npm && npm publish",
-			"dependencies": ["build:npm"]
+			"dependencies": [
+				"build:npm"
+			]
 		},
 		"publish:jsr": {
 			"description": "Copy the README into the package directory and publish the package to JSR.",
