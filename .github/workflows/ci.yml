@@ -50,4 +50,4 @@ jobs:
       - name: 🚀 Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: deno run -A node semantic-release
+        run: deno run -A npm run semantic-release
